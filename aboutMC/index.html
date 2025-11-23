@@ -1,802 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحميل لعبة البناء والمغامرات الشهيرة للأندرويد | نسخة مجانية 2024</title>
-    <meta name="description" content="احصل على لعبة العالم المفتوح والبناء ثلاثية الأبعاد للموبايل. استكشف عوالم لانهائية، ابنِ وكن مبدعاً في هذه اللعبة المحبوبة.">
-    <meta name="keywords" content="لعبة بناء, كلاش, ماين كرافت, موبايل, أندرويد, تحميل, تطبيقات, العاب 2024, sandbox game, block building">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f8f9fa;
-            color: #212529;
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* --- Small & Clear Header --- */
-        header {
-            background: #1877f2;
-            color: white;
-            padding: 18px 0;
-            box-shadow: 0 2px 8px rgba(24, 119, 242, 0.15);
-        }
-
-        .header-content {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .header-content h1 {
-            font-size: 1.4em;
-            font-weight: 600;
-            margin: 0;
-            letter-spacing: -0.5px;
-        }
-
-        .header-content p {
-            font-size: 0.95em;
-            margin-top: 4px;
-            opacity: 0.85;
-            font-weight: 300;
-        }
-
-        /* --- Enhanced Ad Styles with Black Frame --- */
-        .ad-placeholder, .ad-side, .ad-inline, .ad-mobile-banner {
-            position: relative;
-            border: 3px solid #000 !important; /* Clear black frame */
-            background: #e9ecef;
-            color: #6c757d;
-            border-radius: 8px;
-            font-size: 0.95em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        /* Title "ads" at the top of frame */
-        .ad-placeholder::before, .ad-side::before, .ad-inline::before, .ad-mobile-banner::before {
-            content: "ads";
-            position: absolute;
-            top: -12px;
-            right: 15px;
-            background: #000;
-            color: #fff;
-            padding: 3px 15px;
-            font-size: 0.75em;
-            font-weight: 700;
-            border-radius: 4px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .ad-placeholder:hover, .ad-side:hover, .ad-inline:hover, .ad-mobile-banner:hover {
-            background: #dee2e6;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Specific ad type adjustments */
-        .ad-placeholder {
-            margin: 40px auto;
-            padding: 35px;
-            min-height: 120px;
-            text-align: center;
-        }
-
-        .ad-side {
-            padding: 25px;
-            position: sticky;
-            top: 20px;
-            height: 350px;
-            margin-bottom: 20px;
-        }
-
-        .ad-inline {
-            padding: 20px;
-            margin: 25px 0;
-            font-size: 0.85em;
-        }
-
-        .ad-mobile-banner {
-            margin: 30px auto;
-            padding: 20px;
-            min-height: 80px;
-            font-size: 0.85em;
-            display: none;
-        }
-
-        /* Side Ads Containers */
-        .side-ads-container {
-            position: absolute;
-            left: -180px;
-            top: 0;
-            width: 160px;
-        }
-
-        .side-ads-container-right {
-            position: absolute;
-            right: -180px;
-            top: 0;
-            width: 160px;
-        }
-
-        .content-wrapper {
-            position: relative;
-        }
-
-        .content-section {
-            background: white;
-            padding: 35px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            animation: fadeIn 0.5s ease forwards;
-            position: relative;
-        }
-
-        .content-section:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .content-section h2 {
-            color: #1877f2;
-            margin-bottom: 22px;
-            font-size: 1.6em;
-            font-weight: 600;
-            border-right: 4px solid #1877f2;
-            padding-right: 15px;
-        }
-
-        .content-section p {
-            margin-bottom: 18px;
-            font-size: 1.05em;
-            color: #495057;
-            text-align: justify;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 22px;
-            margin: 30px 0;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px solid #e9ecef;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-            border-color: #ced4da;
-        }
-
-        .feature-card h3 {
-            color: #1877f2;
-            margin-bottom: 10px;
-            font-size: 1.15em;
-        }
-
-        .feature-card p {
-            font-size: 0.95em;
-            color: #6c757d;
-            line-height: 1.6;
-        }
-
-        .image-placeholder {
-            background: linear-gradient(135deg, #f1f3f5, #e9ecef);
-            width: 100%;
-            height: 280px;
-            margin: 25px 0;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #868e96;
-            font-size: 1.1em;
-            font-weight: 500;
-            border: 1px dashed #ced4da;
-            overflow: hidden;
-        }
-
-        .download-section {
-            background: linear-gradient(135deg, #42b883 0%, #20a868 100%);
-            padding: 55px 30px;
-            text-align: center;
-            border-radius: 15px;
-            margin-top: 45px;
-            position: relative;
-            box-shadow: 0 8px 20px rgba(66, 184, 131, 0.2);
-        }
-
-        .download-wrapper {
-            display: flex;
-            gap: 25px;
-            align-items: flex-start;
-            justify-content: center;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        #downloadBtn {
-            background: white;
-            color: #20a868;
-            padding: 18px 45px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            letter-spacing: -0.5px;
-        }
-
-        #downloadBtn:hover:not(:disabled) {
-            transform: scale(1.06);
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-        }
-
-        #downloadBtn:disabled {
-            background: #a8d5ba;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-
-        #countdown {
-            color: white;
-            font-size: 1.1em;
-            margin-top: 18px;
-            font-weight: 500;
-            opacity: 0.9;
-        }
-
-        footer {
-            background: #212529;
-            color: #e9ecef;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 70px;
-            font-size: 0.95em;
-        }
-
-        .disclaimer {
-            background: #fff9db;
-            border: 1px solid #ffe066;
-            padding: 22px;
-            border-radius: 10px;
-            margin: 35px 0;
-            color: #e67700;
-            font-size: 0.95em;
-            line-height: 1.7;
-        }
-
-        @media (max-width: 768px) {
-            .header-content h1 {
-                font-size: 1.25em;
-            }
-
-            .ad-mobile-banner {
-                display: flex;
-            }
-
-            .ad-side {
-                display: none;
-            }
-
-            .download-wrapper {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .content-section {
-                padding: 25px;
-            }
-
-            .side-ads-container,
-            .side-ads-container-right {
-                display: none;
-            }
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
-</head>
-<body>
-    <!-- Small & Clear Header -->
-    <header>
-        <div class="header-content">
-            <h1>لعبة البناء والمغامرات الشهيرة minecraft</h1>
-         <p>استمتع بأفضل تجربة إبداع على جهاز الأندرويد</p>
-        </div>
-    </header>
-
-    <div class="container">
-        <!-- Ad 1: Top Banner (keep) -->
-        <div class="ad-placeholder">
-            📢 مساحة إعلانية 728x90<br>
-            يمكنك وضع إعلانات AdSense هنا
-        </div>
-
-        <!-- Ad 2: Mobile Banner (keep for mobile) -->
-        <div class="ad-mobile-banner">
-            📱 مساحة إعلانية 320x100 للموبايل
-        </div>
-
-        <div class="content-wrapper">
-            <!-- Left Side Ads: (moved some placeholders here + added extra) -->
-            <div class="side-ads-container">
-                <div class="ad-side" style="height: 250px;">
-                    📊 إعلان 120x600<br>
-                    Skyscraper
-                </div>
-                <div class="ad-side" style="height: 200px;">
-                    📦 إعلان 160x600<br>
-                    Wide Skyscraper
-                </div>
-                <!-- إضافة لوحة جانبية إضافية -->
-                <div class="ad-side" style="height: 180px;">
-                    🔲 إعلان جانبي 300x250<br>
-                    Side Box A
-                </div>
-                <!-- نقل لوحات (تم تقليل البانرات في منتصف المحتوى) -->
-            </div>
-
-            <!-- Right Side Ads: (مضاف لها لوحات إضافية) -->
-            <div class="side-ads-container-right">
-                <div class="ad-side" style="height: 250px; top: 300px;">
-                    🎯 إعلان 120x600<br>
-                    Skyscraper 2
-                </div>
-                <div class="ad-side" style="height: 180px; top: 580px;">
-                    🎮 إعلان 180x150<br>
-                    Rectangle
-                </div>
-                <!-- إضافة لوحة جانبية إضافية -->
-                <div class="ad-side" style="height: 200px; top: 860px;">
-                    📣 إعلان جانبي 300x250<br>
-                    Side Box B
-                </div>
-            </div>
-
-            <div class="content-section">
-                <h2>🌟 مقدمة عن عالم البناء الثلاثي الأبعاد</h2>
-                <p>
-                    مرحباً بك في صفحة التحميل الرسمية لأشهر لعبة بناء وتطوير في العالم! هذه اللعبة التي حازت على إعجاب أكثر من 200 مليون لاعب حول العالم، تقدم لك تجربة فريدة في عالم افتراضي مفتوح بدون حدود. في هذا العالم، يمكنك بناء القلاع العملاقة، وحفر الأنفاق العميقة، ومقاتلة الوحوش الشرسة، أو حتى بناء مدينة كاملة من الصفر باستخدام مكعبات متنوعة.
-                <!-- Ad 3: Inline -->
-                <div class="ad-inline" style="float: left; width: 300px; margin: 15px 15px 15px 0;">
-                    📰 إعلان 300x250<br>
-                    مدمج داخل المحتوى
-                </div>
-                    تم تطوير هذه اللعبة الأسطورية على يد مطورين محترفين وتم إصدارها لأول مرة في عام 2009، ومنذ ذلك الحين والتحديثات المستمرة تضيف المزيد من المميزات الرائعة. الإصدار الخاص بالأندرويد يجلب لك كل متعة الإصدار الكامل ولكن في جيبك، حيث يمكنك اللعب في أي وقت وفي أي مكان.
-            </p>
-                
-                <!-- (تمت إزالة بانر "Ad 4: After Paragraph" لتقليل الازدحام في منتصف المحتوى) -->
-
-                <div class="image-placeholder">
-                    🖼️ صورة توضيحية: مثال على بناء قلعة عملاقة في اللعبة
-                </div>
-                
-                <p>
-                    مع كل تحديث جديد، تضاف مميزات مثل وحوش جديدة، ومواد بناء فريدة، وتحسينات في الأداء. لا تنسى مشاركة إبداعاتك مع الأصدقاء عبر الشبكات الاجتماعية المدمجة في اللعبة.
-                    <!-- Ad 5: Inline Right -->
-                    <div class="ad-inline" style="float: right; width: 336px; margin: 15px 0 15px 15px;">
-                        🎨 إعلان 336x280<br>
-                        Large Rectangle
-                    </div>
-                    المجتمع العالمي للعبة يضم ملايين اللاعبين الذين يشاركون خرائطهم وتعديلاتهم يومياً. يمكنك الانضمام إلى هذا المجتمع والاستفادة من تجارب الآخرين.
-                </p>
-            </div>
-        </div>
-
-        <!-- تم نقل بعض البانرات الكبيرة إلى الجوانب، لكن نترك بانر عرضي واحد هنا -->
-        <div class="ad-placeholder">
-            📱 مساحة إعلانية للهاتف 300x250
-        </div>
-
-        <!-- Ad 7: Square (نقله إلى الجوانب، لذا حُذف من منتصف المحتوى الأصلي) -->
-
-        <div class="content-section">
-            <h2>🎮 المميزات الرائعة</h2>
-            
-            <!-- Ad 8: Between Title and Content (لا زال متوفر للموبايل) -->
-            <div class="ad-mobile-banner">
-                📲 إعلان 320x50<br>
-                Mobile Banner
-            </div>
-
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>🌍 عوالم لانهائية</h3>
-                    <p>استكشف عوامل تولد تلقائياً مع مساحات شاسعة من الجبال والبحار والغابات. كل عالم فريد ولا يتكرر أبداً!</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🛡️ وضع البقاء</h3>
-                    <p>تحدى نفسك في وضع البقاء حيث عليك جمع الموارد، وتصنيع الأدوات، والدفاع عن نفسك ضد الوحوش التي تظهر ليلاً.</p>
-                </div>
-
-                <!-- (تمت إزالة "Ad 9: Between Features" لتقليل ازدحام منتصف الصفحة) -->
-
-                <div class="feature-card">
-                    <h3>🎨 وضع الإبداع</h3>
-                    <p>في هذا الوضع، لديك موارد غير محدودة وهذا يعني أنك تستطيع البناء بحرية كاملة دون قلق من النفاذ أو الهجمات.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>👥 اللعب الجماعي</h3>
-                    <p>انضم إلى أصدقائك عبر الإنترنت وابنوا مشاريع ضخمة معاً، أو قاتلوا في ساحات معركة خاصة باللاعبين ضد اللاعبين.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>⚙️ التعديلات (Mods)</h3>
-                    <p>احصل على مئات التعديلات التي تضيف محتوى جديداً كلياً للعبة، من أسلحة جديدة إلى مخلوقات خيالية.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📱 محسنة للموبايل</h3>
-                    <p>واجهة تحكم مخصصة للشاشات اللمسية مع إمكانية تخصيص الأزرار حسب راحة يدك.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ad 10: Large Leaderboard (نقله للأسفل مع بقاء نسخة أخف هنا) -->
-        <div class="ad-placeholder" style="min-height: 140px;">
-            📏 إعلان 970x250<br>
-            Large Leaderboard
-        </div>
-
-        <!-- Ad 11: Half Banner -->
-        <div class="ad-placeholder" style="max-width: 468px; min-height: 80px;">
-            📐 إعلان 468x60<br>
-            Half Banner
-        </div>
-
-        <div class="content-section">
-            <h2>📋 المتطلبات التقنية</h2>
-            
-            <!-- Ad 12: Inline Center -->
-            <div class="ad-placeholder" style="max-width: 336px; margin: 25px auto;">
-                🎨 إعلان 336x280<br>
-                Large Rectangle
-            </div>
-
-            <p>
-                قبل التحميل، تأكد من أن جهازك يتوافق مع المتطلبات التالية لضمان أفضل أداء:
-            </p>
-            
-            <ul style="margin: 25px 0; padding-right: 30px; line-height: 1.9; color: #495057;">
-                <li><strong>نظام التشغيل:</strong> أندرويد 5.0 (Lollipop) أو أحدث</li>
-                <li><strong>المعالج:</strong> ثنائي النواة بسرعة 1.2 جيجاهرتز على الأقل</li>
-                <!-- Ad 13: Small Square -->
-                <li style="display: flex; align-items: center; justify-content: space-between;">
-                    <span><strong>الرام:</strong> 2 جيجابايت كحد أدنى (4 جيجابايت للحصول على تجربة سلسة)</span>
-                    <div class="ad-inline" style="width: 200px; margin: 0;">
-                        🎯 إعلان 200x200<br>
-                        Small Square
-                    </div>
-                </li>
-                <li><strong>مساحة التخزين:</strong> 200 ميجابايت لملف التحميل، و800 ميجابايت بعد التثبيت</li>
-                <li><strong>الإنترنت:</strong> مطلوب للتحميل واللعب الجماعي فقط</li>
-            </ul>
-
-            <div class="ad-placeholder">
-                📊 إعلان 970x90<br>
-                بين المتطلبات
-            </div>
-
-            <div class="image-placeholder">
-                📊 شعار توضيحي: متطلبات تشغيل اللعبة على الأندرويد
-            </div>
-            
-            <!-- Ad 14: After Image (موجودة للموبايل حسب CSS) -->
-            <div class="ad-mobile-banner" style="display: none; margin: 20px 0;">
-                📲 إعلان 320x100<br>
-                Mobile Large Banner
-            </div>
-            
-            <p>
-                إذا كان جهازك أقل من هذه المواصفات، يمكنك تفعيل وضع الأداء المنخفض من إعدادات اللعبة لتقليل الجرافيك وزيادة السرعة.
-            </p>
-        </div>
-
-        <div class="content-section">
-            <h2>🕹️ كيفية اللعب للمبتدئين</h2>
-            
-            <!-- Ad 15: Section Top -->
-            <div class="ad-placeholder" style="min-height: 100px; margin-bottom: 25px;">
-                🎮 إعلان 234x60<br>
-                Half Banner
-            </div>
-
-            <p>
-                إذا كنت جديداً على عالم مكعبات البناء هذه، إليك دليل سريع لمساعدتك على البدء:
-            </p>
-            
-            <h3 style="color: #1877f2; margin: 25px 0 12px 0; font-weight: 600;">الخطوة الأولى: جمع الموارد</h3>
-            <p>ابدأ بضرب الأشجار للحصول على الخشب، ثم اصنع فأساً بسيطاً. استخدم الفأس لجمع الحجارة، والفحم، والخشب بكفاءة أكبر.</p>
-            
-            <!-- Ad 16: Between Steps -->
-            <div class="ad-placeholder">
-                🎯 إعلان 970x90<br>
-                بين الخطوات
-            </div>
-
-            <div class="image-placeholder">
-                🪓 صورة: واجهة تصنيع الأدوات في اللعبة
-            </div>
-            
-            <h3 style="color: #1877f2; margin: 25px 0 12px 0; font-weight: 600;">الخطوة الثانية: بناء المأوى</h3>
-            <p>قبل غروب الشمس، تأكد من بناء مأوى بسيط. يمكنك حفر كهف صغير في جبل أو بناء كوخ خشبي صغير. لا تنسَ صنع باب لحمايتك من الوحوش!</p>
-            
-            <!-- Ad 17: Inline Right -->
-            <div class="ad-inline" style="float: right; width: 300px; margin: 15px 0 15px 15px;">
-                📦 إعلان 300x250<br>
-                مدمج في الشرح
-            </div>
-            
-            <h3 style="color: #1877f2; margin: 25px 0 12px 0; font-weight: 600;">الخطوة الثالثة: استكشف وتعلم</h3>
-            <p>في اليوم الثاني، ابدأ في استكشاف المناطق المحيطة. ابحث عن قرى NPC، وكهوف تحتوي على معادن قيمة مثل الحديد والذهب.</p>
-        </div>
-
-        <!-- Ad 18: Between Sections (حُفظ) -->
-        <div class="ad-placeholder" style="min-height: 130px;">
-            📏 إعلان 970x250<br>
-            Large Leaderboard
-        </div>
-
-        <!-- Ad 19: Mobile -->
-        <div class="ad-mobile-banner">
-            📱 إعلان 320x50<br>
-            Mobile Banner
-        </div>
-
-        <div class="content-section">
-            <h2>❓ الأسئلة الشائعة</h2>
-            
-            <!-- Ad 20: FAQ Top -->
-            <div class="ad-placeholder" style="max-width: 468px; margin: 0 auto 25px;">
-                📐 إعلان 468x60<br>
-                Half Banner Center
-            </div>
-            
-            <div class="faq-item">
-                <h3>هل التحميل آمن تماماً؟</h3>
-                <p>نعم، الرابط الموجود في أسفل الصفحة يوجهك مباشرةً إلى متجر التطبيقات الرسمي أو الموقع المعتمد. نحن لا نقدم روابط مباشرة لملفات APK خارجية لضمان أمان جهازك.</p>
-            </div>
-            
-            <!-- Ad 21: Between FAQs -->
-            <div class="ad-mobile-banner" style="margin: 20px 0;">
-                📲 إعلان 320x100<br>
-                Mobile Large Banner
-            </div>
-            
-            <div class="faq-item">
-                <h3>هل اللعبة مجانية بالكامل؟</h3>
-                <p>النسخة التجريبية متاحة مجاناً مع مميزات أساسية. للحصول على كامل المميزات والتحديثات المستقبلية، يمكنك شراء الإصدار الكامل من المتجر.</p>
-            </div>
-            
-            <div class="faq-item">
-                <h3>هل يمكن اللعب بدون إنترنت؟</h3>
-                <p>بالتأكيد! بعد التحميل والتثبيت، يمكنك اللعب في وضع لاعب واحد دون الحاجة إلى أي اتصال بالإنترنت. فقط الوضع الجماعي يتطلب اتصالاً.</p>
-            </div>
-        </div>
-
-        <!-- Ad 22: Large Rectangle (احتفظنا بها) -->
-        <div class="ad-placeholder" style="max-width: 336px;">
-            🎨 إعلان 336x280<br>
-            Large Rectangle
-        </div>
-
-        <!-- Ad 23: Skyscraper (تم نقل/دمجه في الجوانب سابقًا؛ هذه نسخة أخيرة بالوسط) -->
-        <div class="ad-placeholder" style="max-width: 120px; min-height: 600px; margin: 30px auto;">
-            📊 إعلان 120x600<br>
-            Skyscraper
-        </div>
-
-        <div class="disclaimer">
-            <strong>⚠️ إخلاء مسؤولية:</strong> هذه الصفحة هي صفحة تقديم ومعلومات فقط. جميع حقوق اللعبة محفوظة لشركة موجانغ (Mojang) ومايكروسوفت. نحن لا نقدم أي محتوى مخالف لحقوق النشر. الرابط يوجهك إلى المصادر الرسمية المعتمدة للتحميل.
-        </div>
-
-        <!-- Ad 24: Before Tips -->
-        <div class="ad-placeholder">
-            🎯 إعلان 970x90<br>
-            قبل النصائح
-        </div>
-
-        <div class="content-section">
-            <h2>🎯 نصائح احترافية</h2>
-            
-            <!-- Ad 25: Tips Inline -->
-            <div class="ad-inline" style="float: left; width: 250px; margin: 15px 15px 15px 0;">
-                🔲 إعلان 250x250<br>
-                Square Ad
-            </div>
-            
-            <p>
-                بعد التحميل، إليك بعض النصائح الاحترافية:
-            </p>
-            
-            <h3 style="color: #1877f2; margin: 25px 0 12px 0; font-weight: 600;">تخصيص الإعدادات</h3>
-            <p>اضبط مسافة الـRENDER حسب قدرة جهازك. إذا كان جهازك قوياً، يمكنك زيادتها لرؤية مسافات أبعد. لكن إذا كان متوسطاً، اجعلها على 6-8 لتجنب التهنيج.</p>
-            
-            <!-- Ad 26: Between Tips -->
-            <div class="ad-placeholder" style="max-width: 300px; margin: 25px auto;">
-                📱 إعلان 300x250<br>
-                Centered
-            </div>
-            
-            <h3 style="color: #1877f2; margin: 25px 0 12px 0; font-weight: 600;">استخدام الخرائط</h3>
-            <p>يمكنك تحميل خرائط جاهزة من المجتمع العالمي للعبة. هناك آلاف الخرائط المجانية التي تحتوي على ألغاز، وتحديات، وعوالم جاهزة للاستكشاف.</p>
-            
-            <div class="image-placeholder">
-                🏰 صورة: مثال على مدينة ضخمة بناها لاعبون محترفون
-            </div>
-            
-            <!-- Ad 27: After Image -->
-            <div class="ad-mobile-banner">
-                📲 إعلان 320x50<br>
-                Mobile Banner
-            </div>
-        </div>
-
-        <div class="ad-placeholder">
-            🌟 إعلان 970x90<br>
-            قبل التحميل
-        </div>
-
-        <div class="download-section">
-            <h2 style="color: white; margin-bottom: 25px; font-size: 1.7em; font-weight: 600;">⬇️ جاهز للتحميل؟</h2>
-            
-            <!-- Ad 28: Download Section -->
-            <div class="ad-placeholder" style="max-width: 468px; margin: 0 auto 25px;">
-                🎮 إعلان 468x60<br>
-                Before Download Button
-            </div>
-            
-            <div class="download-wrapper">
-                <div style="flex: 1;">
-                    <button id="downloadBtn" onclick="startDownload()">ابدأ التحميل الآن</button>
-                    <div id="countdown"></div>
-                </div>
-                <div class="ad-side">
-                    📱 إعلان جانبي<br>
-                    300x250
-                </div>
-            </div>
-            
-            <!-- Ad 29: After Button -->
-            <div class="ad-placeholder" style="max-width: 336px; margin: 25px auto 0;">
-                📦 إعلان 336x280<br>
-                After Button
-            </div>
-            
-            <p style="color: rgba(255,255,255,0.9); margin-top: 20px; font-size: 0.9em;">
-                بعد الضغط على الزر، انتظر 30 ثانية ثم سيتم توجيهك تلقائياً إلى صفحة التحميل الرسمية
-            </p>
-        </div>
-
-        <!-- Ad 30: Final Bottom -->
-        <div class="ad-placeholder">
-            🏆 إعلان نهائي 728x90<br>
-            Bottom of Page
-        </div>
-
-        <!-- Ad 31: Extra Mobile -->
-        <div class="ad-mobile-banner">
-            📱 إعلان 320x100<br>
-            Final Mobile Ad
-        </div>
-    </div>
-
-    <footer>
-        <p style="font-weight: 500;">&copy; 2024 دليل الألعاب المجانية</p>
-        <p style="margin-top: 8px; opacity: 0.8;">
-            نحن لسنا المطورين الأصليين للعبة. هذه صفحة تقديمية وتوجيهية فقط.
-        </p>
-        
-        <!-- Ad 32: In Footer -->
-        <div class="ad-placeholder" style="max-width: 468px; margin: 20px auto 0; min-height: 80px;">
-            📢 إعلان 468x60<br>
-            Footer Ad
-        </div>
-    </footer>
-
-    <script>
-        let isDownloadReady = false;
-        let countdownInterval;
-
-        function startDownload() {
-            const btn = document.getElementById('downloadBtn');
-            const countdown = document.getElementById('countdown');
-            
-            if (isDownloadReady) {
-                window.open('https://play.google.com/store/apps/details?id=com.mojang.minecraftpe ', '_blank');
-                return;
-            }
-            
-            btn.disabled = true;
-            btn.textContent = 'جاري التحضير...';
-            
-            let timeLeft = 30;
-            
-            countdownInterval = setInterval(() => {
-                countdown.textContent = `⏳ انتظر ${timeLeft} ثانية...`;
-                timeLeft--;
-                
-                if (timeLeft < 0) {
-                    clearInterval(countdownInterval);
-                    isDownloadReady = true;
-                    btn.disabled = false;
-                    btn.textContent = '📥 اضغط للتحميل';
-                    countdown.textContent = '✅ جاهز! انقر للتحميل';
-                    btn.style.background = '#FFD700';
-                    btn.style.color = '#000';
-                }
-            }, 1000);
-            
-            console.log('📊 إعلان تم عرضه: العد التنازلي للتحميل');
-        }
-
-        // تحسين المشاهدة الإعلانية أثناء التمرير
-        let adViewed = false;
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY + window.innerHeight;
-            const downloadSection = document.querySelector('.download-section').offsetTop;
-            
-            if (scrollPosition > downloadSection - 200 && !adViewed) {
-                console.log('📊 إعلان تمت مشاهدته: قسم التحميل');
-                adViewed = true;
-            }
-        });
-
-        // تفعيل Animations
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.feature-card, .faq-item');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            });
-            
-            cards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(25px)';
-                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                observer.observe(card);
-            });
-        });
-    </script>
-</body>
-</html>
